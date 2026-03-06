@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#4a5d23"/>
+  <!-- Olive branch stem -->
+  <path d="M6 20 Q10 12 16 18 Q22 10 26 18" fill="none" stroke="#6b7c3a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Three olives -->
+  <ellipse cx="10" cy="16" rx="3" ry="4" fill="#d4a84b"/>
+  <ellipse cx="16" cy="12" rx="3" ry="4" fill="#d4a84b"/>
+  <ellipse cx="22" cy="16" rx="3" ry="4" fill="#d4a84b"/>
+</svg>
