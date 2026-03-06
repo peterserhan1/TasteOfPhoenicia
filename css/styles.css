@@ -194,7 +194,7 @@ h3 {
   padding: 8rem 2rem 4rem;
   background: 
     linear-gradient(135deg, rgba(248, 245, 240, 0.97) 0%, rgba(245, 240, 232, 0.95) 100%),
-    url('https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=1920&q=80') center/cover no-repeat;
+    url('../assets/images/hero.png') center/cover no-repeat;
   overflow: hidden;
 }
 
