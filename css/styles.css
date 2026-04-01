@@ -1106,22 +1106,46 @@ h3 {
   }
   
   .nav-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 80%;
-    max-width: 300px;
-    height: 100vh;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     background: var(--cream);
     flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
-    transition: right var(--transition);
-    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+    gap: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, box-shadow 0.35s ease;
+    box-shadow: none;
   }
   
   .nav-links.active {
-    right: 0;
+    max-height: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav-links li {
+    border-bottom: 1px solid rgba(74, 93, 35, 0.08);
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  .nav-links a.active {
+    color: var(--olive-green);
+    font-weight: 600;
   }
 
   .section {
@@ -1133,24 +1157,27 @@ h3 {
   }
 
   .hero {
-    min-height: auto;
-    padding: 5.5rem 1.25rem 2.5rem;
+    min-height: 100svh;
+    padding: 4.5rem 1.25rem 2rem;
+    display: flex;
+    align-items: center;
   }
 
   .hero h1 {
-    font-size: 1.6rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
   }
 
   .hero-badge {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     letter-spacing: 0.15em;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem;
   }
 
   .hero-subheadline {
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
   }
 
   .btn {
