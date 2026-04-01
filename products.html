@@ -14,7 +14,9 @@
 <body>
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="index.html" class="logo">Taste of <span>Phoenicia</span></a>
+      <a href="index.html" class="logo">
+        <img src="images/products/logo.jpg" alt="Taste of Phoenicia" class="logo-img">
+      </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
         <span></span>
         <span></span>
@@ -49,145 +51,220 @@
         </div>
 
         <div class="products-catalog">
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/olive-oil.png" alt="Extra Virgin Olive Oil">
+
+          <article class="product-card has-gallery">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="images/products/olive-oil-250ml.jpg" alt="Extra Virgin Olive Oil - 250ml" class="gallery-img active">
+                <img src="images/products/olive-oil-500ml.jpg" alt="Extra Virgin Olive Oil - 500ml" class="gallery-img">
+                <img src="images/products/olive-oil-1000ml.jpg" alt="Extra Virgin Olive Oil - 1L" class="gallery-img">
+                <img src="images/products/olive-oil-2850ml.jpg" alt="Extra Virgin Olive Oil - 2.85L" class="gallery-img">
+                <img src="images/products/olive-oil-gallon.jpg" alt="Extra Virgin Olive Oil - 1 Gallon" class="gallery-img">
+                <button class="gallery-expand" aria-label="View all images">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="gallery-nav">
+                <button class="gallery-dot active" aria-label="Image 1"></button>
+                <button class="gallery-dot" aria-label="Image 2"></button>
+                <button class="gallery-dot" aria-label="Image 3"></button>
+                <button class="gallery-dot" aria-label="Image 4"></button>
+                <button class="gallery-dot" aria-label="Image 5"></button>
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Extra Virgin Olive Oil</h3>
               <p>Hand-picked and cold-pressed following international quality standards. Preserves nutrients, aroma, flavor, and color.</p>
+              <div class="product-sizes">
+                <span class="size-tag">250ml</span>
+                <span class="size-tag">500ml</span>
+                <span class="size-tag">1L</span>
+                <span class="size-tag">2.85L</span>
+                <span class="size-tag">1 Gallon</span>
+              </div>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/tahini.png" alt="Tahini">
+          <article class="product-card has-gallery">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="images/products/tahini-1lb.jpg" alt="Tahini - 1 Lb" class="gallery-img active">
+                <img src="images/products/tahini-2lb.jpg" alt="Tahini - 2 Lb" class="gallery-img">
+                <button class="gallery-expand" aria-label="View all images">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
+              <div class="gallery-nav">
+                <button class="gallery-dot active" aria-label="Image 1"></button>
+                <button class="gallery-dot" aria-label="Image 2"></button>
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Tahini</h3>
               <p>Rich, creamy sesame paste from premium roasted sesame seeds. A staple of Lebanese and Middle Eastern cuisine.</p>
+              <div class="product-sizes">
+                <span class="size-tag">1 Lb</span>
+                <span class="size-tag">2 Lb</span>
+              </div>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/pickles.png" alt="Pickled Cucumbers">
+          <article class="product-card">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="assets/images/pickles.png" alt="Pickled Cucumbers" class="gallery-img active">
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Pickled Cucumbers</h3>
               <p>Traditional Lebanese-style pickled cucumbers. Crisp, tangy, and perfect as a side or in mezze.</p>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/pickles.png" alt="Pickled Wild Cucumbers">
+          <article class="product-card">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="images/products/pickled-wild-cucumber.jpg" alt="Pickled Wild Cucumbers" class="gallery-img active">
+                <button class="gallery-expand" aria-label="View image">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Pickled Wild Cucumbers</h3>
               <p>Unique wild cucumber pickles with an authentic regional flavor. A Lebanese specialty.</p>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/pickles.png" alt="Pickled Turnips">
+          <article class="product-card">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="assets/images/pickles.png" alt="Pickled Turnips" class="gallery-img active">
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Pickled Turnips</h3>
               <p>Vibrant pink pickled turnips, a classic accompaniment to falafel and shawarma.</p>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/pastes.png" alt="Tomato Paste">
+          <article class="product-card">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="assets/images/pastes.png" alt="Tomato Paste" class="gallery-img active">
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Tomato Paste</h3>
               <p>Concentrated, sun-dried tomato paste. The foundation of many Lebanese dishes.</p>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/pastes.png" alt="Hot Pepper Paste">
+          <article class="product-card">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="assets/images/pastes.png" alt="Hot Pepper Paste" class="gallery-img active">
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Hot Pepper Paste</h3>
               <p>Spicy, flavorful pepper paste for adding heat and depth to traditional recipes.</p>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/sweets.png" alt="Baklava">
+          <article class="product-card">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="assets/images/sweets.png" alt="Baklava" class="gallery-img active">
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Baklava</h3>
               <p>Flaky layers of phyllo, nuts, and honey syrup. A beloved Lebanese dessert.</p>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/sweets.png" alt="Nougat and Malban">
+          <article class="product-card">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="assets/images/sweets.png" alt="Nougat and Malban" class="gallery-img active">
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Nougat & Malban</h3>
-              <p>Traditional Lebanese nougat and malban—chewy, nutty confections with a rich heritage.</p>
+              <p>Traditional Lebanese nougat and malban — chewy, nutty confections with a rich heritage.</p>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/tahini.png" alt="Tahini Dressing">
+          <article class="product-card">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="assets/images/tahini.png" alt="Tahini Dressing" class="gallery-img active">
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Tahini Dressing</h3>
               <p>Ready-to-use tahini dressing. Perfect for salads, falafel, and dipping.</p>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/sweets.png" alt="Halva Plain">
+          <article class="product-card">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="images/products/halva-plain.jpg" alt="Halva Plain" class="gallery-img active">
+                <button class="gallery-expand" aria-label="View image">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Halva (Plain)</h3>
               <p>Classic sesame halva with a smooth, crumbly texture. Simple and delicious.</p>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/sweets.png" alt="Halva with Chocolate">
+          <article class="product-card">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="images/products/halva-chocolate.jpg" alt="Halva with Chocolate" class="gallery-img active">
+                <button class="gallery-expand" aria-label="View image">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Halva with Chocolate</h3>
               <p>Sesame halva swirled with rich chocolate. A decadent twist on a classic.</p>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/sweets.png" alt="Halva with Pistachios">
+          <article class="product-card">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="images/products/halva-pistachio.jpg" alt="Halva with Pistachios" class="gallery-img active">
+                <button class="gallery-expand" aria-label="View image">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </button>
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Halva with Pistachios</h3>
               <p>Premium halva studded with pistachios. A luxurious Middle Eastern treat.</p>
             </div>
           </article>
 
-          <article class="product-item">
-            <div class="product-item-image">
-              <img src="assets/images/sweets.png" alt="Halva Sugar Free">
+          <article class="product-card">
+            <div class="product-card-gallery">
+              <div class="gallery-main">
+                <img src="assets/images/sweets.png" alt="Halva Sugar Free" class="gallery-img active">
+              </div>
             </div>
-            <div class="product-item-content">
+            <div class="product-card-info">
               <h3>Halva (Sugar Free)</h3>
               <p>Traditional halva flavor without the sugar. Ideal for health-conscious customers.</p>
             </div>
           </article>
+
         </div>
 
         <div class="cta-section">
@@ -199,11 +276,26 @@
     </section>
   </main>
 
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close gallery">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous image">&#8249;</button>
+    <button class="lightbox-next" aria-label="Next image">&#8250;</button>
+    <div class="lightbox-stage">
+      <img src="" alt="" class="lightbox-img">
+    </div>
+    <div class="lightbox-footer">
+      <div class="lightbox-counter"></div>
+      <div class="lightbox-thumbnails"></div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <div class="logo">Taste of <span>Phoenicia</span></div>
+          <div class="logo">
+            <img src="images/products/logo.jpg" alt="Taste of Phoenicia" class="logo-img">
+          </div>
           <p>Authentic Lebanese Flavor, Imported with Tradition.</p>
           <div class="social-links">
             <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
