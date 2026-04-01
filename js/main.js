@@ -63,6 +63,23 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
 
+    const prevBtn = card.querySelector('.gallery-arrow-prev');
+    const nextBtn = card.querySelector('.gallery-arrow-next');
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const current = Array.from(imgs).findIndex(img => img.classList.contains('active'));
+        showSlide((current - 1 + imgs.length) % imgs.length);
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const current = Array.from(imgs).findIndex(img => img.classList.contains('active'));
+        showSlide((current + 1) % imgs.length);
+      });
+    }
+
     let startX = 0;
     const galleryMain = card.querySelector('.gallery-main');
     galleryMain.addEventListener('touchstart', (e) => {
